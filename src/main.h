@@ -31,6 +31,7 @@ class ServerImpl final {
     std::string server_address("0.0.0.0:50051");
 
     grpc::reflection::InitProtoReflectionServerBuilderPlugin();
+    grpc::EnableDefaultHealthCheckService(true);
     ServerBuilder builder;
     // Listen on the given address without any authentication mechanism.
     builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
@@ -43,7 +44,8 @@ class ServerImpl final {
     // Finally assemble the server.
     server_ = builder.BuildAndStart();
     
-    std::cout << "Server listening on " << server_address << std::endl;
+    
+    std::cout << "1|1|tcp|" << server_address << "|grpc"<< std::endl;
 
     // Proceed to the server's main loop.
     HandleRpcs();

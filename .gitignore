@@ -7,3 +7,4 @@ proto/vm.grpc.pb.cc
 proto/vm.grpc.pb.h
 proto/vm.pb.cc
 proto/vm.pb.h
+storageVM

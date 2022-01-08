@@ -26,7 +26,7 @@ grpcurl -plaintext -d \
 '{                                
   "networkID" : "1",
   "subnetID" : "0xaa",               
-  "chainID" : "aaaa",
+  "chainID" : "",
   "nodeID": "0xaa",
   "xChainID" : "0xaa",
   "avaxAssetID" : "0xaa",
