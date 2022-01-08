@@ -9,7 +9,7 @@
 #include <grpcpp/grpcpp.h>
 
 #include "../proto/vm.grpc.pb.h"
-#include "CommonData.h"
+#include "libs/CommonData.h"
 
 using grpc::Server;
 using grpc::ServerAsyncResponseWriter;
