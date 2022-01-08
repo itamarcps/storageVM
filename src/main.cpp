@@ -2,8 +2,7 @@
 
 
 int main() {
-  ServerImpl server;
-  server.Run();
+  RunServer();
 
   return 0;
 }
